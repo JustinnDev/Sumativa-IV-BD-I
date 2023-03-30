@@ -8,7 +8,7 @@
 
             server.open();
 
-            server.command("SELECT * FROM sucursal", true);
+            server.command("SELECT * FROM persona WHERE tipo_persona = 'Cliente'", true);
             server.command("SELECT * FROM sucursal ORDER BY estado ASC, ciudad ASC" , true);
 
             server.command(
@@ -29,3 +29,4 @@
         }
     }
 }
+
